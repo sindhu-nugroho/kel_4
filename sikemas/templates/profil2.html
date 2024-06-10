@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengguna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* Hijau biru tua */
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-box {
+            background-color: #00707a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+        .profile-photo {
+            margin: 0 auto 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .profile-photo img {
+            width: 100%;
+        }
+        .profile-info input, .profile-info select {
+            width: calc(100% - 20px);
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .toggle-password {
+            cursor: pointer;
+            position: relative;
+            top: -30px;
+            right: -160px;
+        }
+        button {
+            padding: 5px 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00897b;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00695c;
+        }
+        .edit-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-box">
+    <div class="profile-photo" onclick="changePhoto()">
+        <img src="image/mawar.jpeg" alt="Profile Photo" id="profilePhoto">
+    </div>
+    <div class="profile-info">
+        <input type="text" value="Doly" id="profileName">
+        <input type="text" value="990768656" id="profileNIK">
+        <input type="password" value="password123" id="profilePassword">
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+        <input type="text" value="Siapa Tuhan mu?" id="profileQuestion">
+        <input type="date" value="2005-04-17" id="profileDOB">
+        <button id="saveButton" onclick="saveProfile()">Simpan</button>
+        <button id="editButton" class="edit-button" onclick="editProfile()">Ubah Profil</button>
+    </div>
+</div>
+
+<script>
+    function changePhoto() {
+        alert('Ubah foto profil di sini');
+        // Logika untuk mengubah foto profil
+    }
+
+    function togglePassword() {
+        var passwordInput = document.getElementById('profilePassword');
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+        } else {
+            passwordInput.type = "password";
+        }
+    }
+
+    function editProfile() {
+        // Logika untuk mengedit profil
+        document.getElementById("saveButton").style.display = "block";
+        document.getElementById("editButton").style.display = "none";
+        document.getElementById("profileName").disabled = false;
+        document.getElementById("profileNIK").disabled = false;
+        document.getElementById("profilePassword").disabled = false;
+        document.getElementById("profileQuestion").disabled = false;
+        document.getElementById("profileDOB").disabled = false;
+    }
+
+    function saveProfile() {
+        var name = document.getElementById('profileName').value;
+        var nik = document.getElementById('profileNIK').value;
+        var question = document.getElementById('profileQuestion').value;
+        var dob = document.getElementById('profileDOB').value;
+
+        // Simpan data profil
+        alert('Profil disimpan!');
+        document.getElementById("saveButton").style.display = "none";
+        document.getElementById("editButton").style.display = "block";
+        document.getElementById("profileName").disabled = true;
+        document.getElementById("profileNIK").disabled = true;
+        document.getElementById("profilePassword").disabled = true;
+        document.getElementById("profileQuestion").disabled = true;
+        document.getElementById("profileDOB").disabled = true;
+    }
+
+    // Inisialisasi dengan mode tidak dapat diedit
+    window.onload = function() {
+        editProfile();
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Sampah Graha</title>
+    <style>
+        /* Pengaturan CSS untuk head dan body */
+        .header {
+            background-color: #F0F3FF; /* Warna teal gelap */
+            color: #333; /* Warna teks putih untuk kontras */
+            padding: 20px;
+            text-align: center;
+            margin: 0; /* Menghilangkan margin */
+            width: 100%; /* Lebar penuh */
+        }
+        .header img {
+            float: right;
+            width: 100px;
+            height: auto;
+        }
+        body {
+            background-color: #fff; /* putih */
+            font-family: Arial, sans-serif;
+            margin: 0; /* Menghilangkan margin default */
+            padding: 0; /* Menghilangkan padding default */
+        }
+        /* Pengaturan CSS untuk kotak link */
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .box {
+            width: 60%;
+            margin: 10px;
+            background-color: #F0F3FF;
+            border: 1px solid #ddd;
+            border-radius: 5px; /* Ujung garis tidak tajam */
+            transition: transform .2s; /* Animasi */
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .box:hover {
+            transform: scale(1.05); /* Efek membesar */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bank Sampah Graha</h1>
+        <h3>Semarang, Indonesia</h3>
+       
+    </div>
+    <div class="box-container">
+        <div class="box" onclick="location.href='tentanggraha.html';">
+            <h2>Tentang Bank Sampah Graha</h2>
+            <p>Informasi mengenai sejarah, visi, dan misi Bank Sampah Graha.</p>
+        </div>
+        <div class="box" onclick="location.href='lapkeubanksampah.html';">
+            <h2>Laporan Keuangan Bank Sampah Graha</h2>
+            <p>Detail laporan keuangan Bank Sampah Graha termasuk pendapatan dan pengeluaran.</p>
+        </div>
+        <div class="box" onclick="location.href='manajemen.html';">
+            <h2>Manajemen Bank Sampah Graha</h2>
+            <p>Informasi tentang tim manajemen Bank Sampah Graha dan struktur organisasi.</p>
+        </div>
+        <div class="box" onclick="location.href='rating.html';">
+            <h2>Rating Bank Sampah Graha</h2>
+            <p>Penilaian dan ulasan Bank Sampah Graha dari pelanggan dan mitra.</p>
+        </div>
+        <div class="box" onclick="location.href='investasi.html';">
+            <h2>Investasi</h2>
+            <p>Pilih Investasi Anda.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript untuk navigasi bisa ditambahkan disini jika diperlukan
+    </script>
+</body>
+</html>

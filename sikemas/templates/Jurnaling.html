@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siklus Akuntansi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5dc; /* Warna krem */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .section {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative; /* For positioning the logo */
+        }
+        .logo {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 100px; /* Adjust size as needed */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f8f9fa;
+        }
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .input-group > div, .input-group > input {
+            flex-basis: 48%;
+        }
+        select, input[type="number"], input[type="date"], button {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .credit-row {
+            margin-top: 20px; /* Margin for credit row */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section">
+        <h2>Input Jurnal</h2>
+        <img src="image/gambar1.png" alt="Logo Sikemas" class="logo">
+        <div class="input-group">
+            <div>
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date">
+            </div>
+        </div>
+        <div class="input-group">
+            <div>
+                <label for="accountDebit">Akun Debit:</label>
+                <select id="accountDebit">
+                    <option value="CPU komplit">CPU komplit</option>
+                    <option value="HP bekas">HP bekas</option>
+                <option value="Kulkas 2 pintu">kulkas 2 pintu</option>
+                <option value="Kulkas 1 pintu">Kulkas 1 pintu</option>
+                <option value="Lampu TL Besar">Lampu TL Besar</option>
+                <option value="Lampu bekas 2U">Lampu bekas 2U</option>
+                <option value="Lampu bekas TL 3u">Lampu bekas TL 3u</option>
+                <option value="Mainboard monitor kompeter">Mainboard monitor kompeter</option>
+                <option value="Monitor LCD">Monitor LCD</option>
+                <option value="TV Bekas">TV Bekas</option>
+                <option value="Aqua">Aqua</option>
+                <option value="Club">Club</option>
+                <option value="JS Tanpa Laber Aqua">JS Tanpa Laber Aqua</option>
+                <option value="JS Tanpa label Ale Ale">JS Tanpa label Ale Ale</option>
+                <option value="Mounty">Mounty</option>
+                <option value="Teh gelas tanpa label">Teh gelas tanpa label</option>
+                <option value="Aqua tanpa Label">Aqua tanpa Label</option>
+                <option value="Club tanpa label">Club tanpa label</option>
+                <option value="Teh gelas mounty kotor bercampur cincin atau potongan bibiran gelas">Teh gelas mounty kotor bercampur cincin atau potongan bibiran gelas</option>
+                <option value="Tanpa penutup dan label botol air mineral aqua">Tanpa penutup dan label botol air mineral aqua</option>
+                <option value="JS club segala jenis PET">JS club segala jenis PET</option>
+                <option value="warna hijau atau biru PET tanpa label ">warna hijau atau biru PET tanpa label</option>
+                <option value="warna hijau dan biru (campur PET)">warna hijau dan biru (campur PET)</option>
+                <option value="tutup botol campur tutup galon">tutup botol campur tutup galon</option>
+                <option value="pembungkus bening">pembungkus beningt</option>
+                <option value="plastik minyak goreng">plastik minyak goreng</option>
+                <option value="pembungkus sachet">pembungkus sachet</option>
+                <option value="besi cor">besi cor</option>
+                <option value="besi plat drum">esi plat drum</option>
+                <option value="kaleng makanan">kaleng makanan</option>
+                <option value="kaleng susu tidak dipress kuningan">kaleng susu tidak dipress kuningan</option>
+                <option value="kabel box">kabel box</option>
+                <option value="fanta">fanta</option>
+                <option value="sprite">sprite</option>
+                <option value="alma">CPU komplit</option>
+                <option value="wajaan">wajaan</option>
+                <option value="aluminium">aluminium</option>
+                <option value="kepala regulator">kepala regulator</option>
+                <option value="buku tulis">buku tulis</option>
+                <option value="kertas fotocopy">kertas fotocopy</option>
+                <option value="majalah">majalah</option>
+                <option value="karton warna">karton warna</option>
+                <option value="kertas buram">kertas buram</option>
+                <option value="karton ">karton </option>
+                <option value="Rak susun telur">Rak susun telur</option>
+                <option value="botol">botol</option>
+                <option value="botol leher panjang lebar">botol leher panjang lebar</option>
+                <option value="HP bekas">HP bekas</option>
+                <option value="kas">kas</option>
+                <option value="pembelian">pembelian</option>
+                <option value="penjualan">penjualan</option>
+                <option value="biaya listrik">biaya listrik</option>
+                <option value="biaya air">biaya air</option>
+                <option value="biaya pegawai">biaya pegawai</option>
+                <option value="sewa tempat">sewa tempat</option>
+                    <!-- Add more options here -->
+                </select>
+            </div>
+            <input type="number" id="debit" placeholder="Nominal Debit">
+        </div>
+        <div class="input-group">
+            <div>
+                <label for="accountCredit">Akun Kredit:</label>
+                <select id="accountCredit">
+                    <option value="Kulkas 2 pintu">Kulkas 2 pintu</option>
+                    <option value="Kulkas 1 pintu">Kulkas 1 pintu</option>
+                    <option value="Kulkas 2 pintu">kulkas 2 pintu</option>
+                    <option value="Kulkas 1 pintu">Kulkas 1 pintu</option>
+                    <option value="Lampu TL Besar">Lampu TL Besar</option>
+                    <option value="Lampu bekas 2U">Lampu bekas 2U</option>
+                    <option value="Lampu bekas TL 3u">Lampu bekas TL 3u</option>
+                    <option value="Mainboard monitor kompeter">Mainboard monitor kompeter</option>
+                    <option value="Monitor LCD">Monitor LCD</option>
+                    <option value="TV Bekas">TV Bekas</option>
+                    <option value="Aqua">Aqua</option>
+                    <option value="Club">Club</option>
+                    <option value="JS Tanpa Laber Aqua">JS Tanpa Laber Aqua</option>
+                    <option value="JS Tanpa label Ale Ale">JS Tanpa label Ale Ale</option>
+                    <option value="Mounty">Mounty</option>
+                    <option value="Teh gelas tanpa label">Teh gelas tanpa label</option>
+                    <option value="Aqua tanpa Label">Aqua tanpa Label</option>
+                    <option value="Club tanpa label">Club tanpa label</option>
+                    <option value="Teh gelas mounty kotor bercampur cincin atau potongan bibiran gelas">Teh gelas mounty kotor bercampur cincin atau potongan bibiran gelas</option>
+                    <option value="Tanpa penutup dan label botol air mineral aqua">Tanpa penutup dan label botol air mineral aqua</option>
+                    <option value="JS club segala jenis PET">JS club segala jenis PET</option>
+                    <option value="warna hijau atau biru PET tanpa label ">warna hijau atau biru PET tanpa label</option>
+                    <option value="warna hijau dan biru (campur PET)">warna hijau dan biru (campur PET)</option>
+                    <option value="tutup botol campur tutup galon">tutup botol campur tutup galon</option>
+                    <option value="pembungkus bening">pembungkus beningt</option>
+                    <option value="plastik minyak goreng">plastik minyak goreng</option>
+                    <option value="pembungkus sachet">pembungkus sachet</option>
+                    <option value="besi cor">besi cor</option>
+                    <option value="besi plat drum">esi plat drum</option>
+                    <option value="kaleng makanan">kaleng makanan</option>
+                    <option value="kaleng susu tidak dipress kuningan">kaleng susu tidak dipress kuningan</option>
+                    <option value="kabel box">kabel box</option>
+                    <option value="fanta">fanta</option>
+                    <option value="sprite">sprite</option>
+                    <option value="alma">CPU komplit</option>
+                    <option value="wajaan">wajaan</option>
+                    <option value="aluminium">aluminium</option>
+                    <option value="kepala regulator">kepala regulator</option>
+                    <option value="buku tulis">buku tulis</option>
+                    <option value="kertas fotocopy">kertas fotocopy</option>
+                    <option value="majalah">majalah</option>
+                    <option value="karton warna">karton warna</option>
+                    <option value="kertas buram">kertas buram</option>
+                    <option value="karton ">karton </option>
+                    <option value="Rak susun telur">Rak susun telur</option>
+                    <option value="botol">botol</option>
+                    <option value="botol leher panjang lebar">botol leher panjang lebar</option>
+                    <option value="HP bekas">HP bekas</option>
+                    <option value="kas">kas</option>
+                    <option value="pembelian">pembelian</option>
+                    <option value="penjualan">penjualan</option>
+                    <option value="biaya listrik">biaya listrik</option>
+                    <option value="biaya air">biaya air</option>
+                    <option value="biaya pegawai">biaya pegawai</option>
+                    <option value="sewa tempat">sewa tempat</option>
+                    <!-- Add more options here -->
+                </select>
+            </div>
+            <input type="number" id="credit" placeholder="Nominal Kredit">
+        </div>
+        <button onclick="addEntry()">Tambahkan Jurnal</button>
+    </div>
+
+    <div class="section">
+        <h2>Jurnal Umum</h2>
+        <table id="journalTable">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Nama Akun</th>
+                    <th>Debit</th>
+                    <th>Kredit</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Buku Besar</h2>
+        <div id="ledger"></div>
+    </div>
+</div>
+
+<script>
+    const ledger = {};
+
+    function addEntry() {
+        const date = document.getElementById("date").value;
+        const accountDebit = document.getElementById("accountDebit").value;
+        const debit = parseFloat(document.getElementById("debit").value) || 0;
+        const accountCredit = document.getElementById("accountCredit").value;
+        const credit = parseFloat(document.getElementById("credit").value) || 0;
+
+        // Add debit entry to Journal Table
+        const journalTable = document.getElementById("journalTable").getElementsByTagName("tbody")[0];
+        let row = journalTable.insertRow(-1);
+        row.insertCell(0).textContent = date;
+        row.insertCell(1).textContent = accountDebit;
+        row.insertCell(2).textContent = debit.toFixed(2);
+        row.insertCell(3).textContent = '';
+
+        // Add a space between debit and credit entries
+        row = journalTable.insertRow(-1);
+        row.className = 'credit-row'; // Add class for styling
+        row.insertCell(0).textContent = ''; // Leave the date column empty for credit
+        row.insertCell(1).textContent = accountCredit;
+        row.insertCell(2).textContent = ''; // Leave the debit column empty for credit
+        row.insertCell(3).textContent = credit.toFixed(2);
+
+        // Update ledger for both debit and credit
+        updateLedger(accountDebit, debit, 'debit');
+        updateLedger(accountCredit, credit, 'credit');
+
+        // Reset fields
+        document.getElementById("debit").value = '';
+        document.getElementById("credit").value = '';
+    }
+
+    function updateLedger(account, amount, type) {
+        if (!ledger[account]) {
+            ledger[account] = { debit: 0, credit: 0 };
+        }
+        ledger[account][type] += amount;
+
+        displayLedger();
+    }
+
+    function displayLedger() {
+        const ledgerDiv = document.getElementById("ledger");
+        ledgerDiv.innerHTML = ''; // Clear previous entries
+        for (const [account, { debit, credit }] of Object.entries(ledger)) {
+            const entryDiv = document.createElement('div');
+            entryDiv.innerHTML = `<h4>${account}</h4>
+                                  <p>Debit: ${debit.toFixed(2)}</p>
+                                  <p>Kredit: ${credit.toFixed(2)}</p>`;
+            ledgerDiv.appendChild(entryDiv);
+        }
+    }
+</script>
+
+</body>
+</html>
+

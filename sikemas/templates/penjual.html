@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Barang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/penjual.css">
+</head>
+<body>
+
+<header>
+    
+    <div class="container">  
+        <nav>
+            <a href="#" class="logo">Pilih Jenis Barang</a>
+            <ul class="nav-menu">
+                <li><a href="#elektronik">Elektronik</a></li>
+                <li><a href="#plastik">Plastik</a></li>
+                <li><a href="#logam">Logam</a></li>
+                <li><a href="#kertas">Kertas</a></li>
+                <li><a href="#kaca">Kaca</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <a href="#pengiriman" class="pengiriman-btn">Pilih Pengiriman</a>
+    </div>
+</header>
+
+<main>
+<section class="card" id="elektronik">
+    <h3>Elektronik</h3>
+    <button onclick="toggleDaftar('daftarElektronik')">Tampilkan</button>
+    <div id="daftarElektronik" style="display: none;">
+        <table>
+            <tr><th>Jenis Barang</th><th>Contoh Barang</th><th>Harga Unit/Kg<th><th>+</th><th>Jumlah</th><th>-</th></tr>
+            <tr><td>Aki</td><td>-</td><td>Rp. 10.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>CPU komplit</td><td>-</td><td>Rp. 20.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>HP bekas</td><td>-</td><td>Rp. 50.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kulkas 2 pintu</td><td>-</td><td>Rp. 150.000 - Rp. 200.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kulkas 1 pintu</td><td>-</td><td>Rp. 100.000 - Rp. 150.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Lampu TL Bekas 2U</td><td>-</td><td>Rp. 500/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Lampu TL Bekas 3U</td><td>-</td><td>Rp. 1000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Mainboard</td><td>-</td><td>Rp. 15.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Monitor Komputer</td><td>-</td><td>Rp. 25.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Monitor LCD</td><td>-</td><td>Rp. 15.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>TV Bekas</td><td>-</td><td>Rp. 50.000 - Rp. 100.000/unit</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+        </table>
+    </div>
+</section>
+
+<section class="card" id="plastik">
+    <h3>Plastik</h3>
+    <button onclick="toggleDaftar('daftarPlastik')">Tampilkan</button>
+    <div id="daftarPlastik" style="display: none;">
+        <table>
+            <tr><th>Jenis Barang</th><th>Contoh Barang</th><th>Harga Unit/Kg<th><th>+</th><th>Jumlah</th><th>-</th></tr>
+            <tr><td>PP Gelas bening bersih</td><td>Agua, Club, JS tanpa label</td><td>Rp. 5000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PP Gelas being kotor</td><td>Agua, Club, JS tanpa label</td><td>Rp. 3300</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PP Gelas Warna</td><td>Ale-ale, montea, teh gelas, tanpa label dan disusun</td><td>Rp. 2500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PP Gelas Warna Kotor</td><td>Aqua, Club, teh gelas, montea kotor bercampur</td><td>Rp. 1200</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PP Cincin gelas</td><td>Cincin atau potongan bibir gelas</td><td>Rp. 1500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PET Bening bersih</td><td>Botol Ades tanpa penutup dan label</td><td>Rp. 3900</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PET Biru mudah bersih</td><td>Botol Air Mineral Aqua, JS, CLub</td><td>Rp. 3200</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PET Kotor</td><td>Segala jenis PET yang masih ada label dan penutup</td><td>Rp. 1000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PET warna bersih/pisah</td><td>PET Tanpa penutup dan label, warna hijau atau biru</td><td>Rp. 1800</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PET warna campur</td><td>PET tanpa penutup dan label, warna hijau dan biru (campur)</td><td>Rp. 1200</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>PET campur</td><td>PET campur tanpa penutup dan label</td><td>Rp. 1900</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Plastik HD campur</td><td>Baskom, gelas, piring, tanpa damar</td><td>Rp. 1800</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>HD Tutup botol</td><td>Tutup botol campur</td><td>Rp. 2500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>HD Tutup galon</td><td>Tutup Galon warna campur</td><td>Rp. 3500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Plastik daun</td><td>Pembungkus bening campur</td><td>Rp. 1000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Plastik HD (Blow) campur</td><td>Kemasan Plastik bergaris tengah</td><td>Rp. 2000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Refill, Sachet</td><td>Refill minyak goreng, pembungkus sachet</td><td>Rp. 500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+        </table>
+    </div>
+</section>
+
+<section class="card" id="logam">
+    <h3>Logam</h3>
+    <button onclick="toggleDaftar('daftarLogam')">Tampilkan</button>
+    <div id="daftarLogam" style="display: none;">
+        <table>
+            <tr><th>Jenis Barang</th><th>Contoh Barang</th><th>Harga Unit/Kg<th><th>+</th><th>Jumlah</th><th>-</th></tr>
+            <tr><td>Besi Tebal</td><td>Besi cor, besi plat</td><td>Rp. 2800</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Besi tipis</td><td>Drum, rak piring</td><td>Rp. 1800</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kaleng</td><td>Kaleng makanan, kaleng susu, tidak dipress</td><td>Rp. 1400</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kuningan</td><td>Kuningan piala</td><td>Rp. 38.000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Tembaga</td><td>Tembaga dari kabel</td><td>Rp. 60.000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Aluminium tebal</td><td>Box mesin motor</td><td>Rp. 10.000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Aluminium tipis</td><td>Kaleng minuman, fanta, sprite, wajan</td><td>Rp. 8000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Aluminium siku</td><td>Alma dekor</td><td>Rp. 14.000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Aluminium campur</td><td>Aluminium campur besi</td><td>Rp. 6000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Besi seng</td><td>Seng bekas</td><td>Rp. 1000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Perunggu</td><td>Kran air, kepala regulator</td><td>Rp. 6000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+        </table>
+    </div>
+</section>
+
+<section class="card" id="kertas">
+    <h3>Kertas</h3>
+    <button onclick="toggleDaftar('daftarKertas')">Tampilkan</button>
+    <div id="daftarKertas" style="display: none;">
+        <table>
+            <tr><th>Jenis Barang</th><th>Contoh Barang</th><th>Harga Unit/Kg<th><th>+</th><th>Jumlah</th><th>-</th></tr>
+            <tr><td>Kertas putih</td><td>Buku tulis, kertas foto copy</td><td>Rp. 2000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kertas campur/warna</td><td>Majalah, karton warna</td><td>Rp. 500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kertas buram</td><td>Kertas kelabu/buram</td><td>Rp. 1500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kardus (dos)</td><td>Karton coklat box</td><td>Rp. 1700</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kertas semen A</td><td>Kertas semen tonasa</td><td>Rp. 1500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Kertas mikel</td><td>Kertas pembungkus coklat</td><td>Rp. 1000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Koran</td><td>Koran berita</td><td>Rp. 1500</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button> </tr>
+            <tr><td>Karton rak telur</td><td>Rak untuk susun telur</td><td>Rp. 400</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Cones</td><td>Kertas gulungan</td><td>Rp. 800</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button> </tr>
+        </table>
+    </div>
+</section>
+
+<section class="card" id="kaca">
+    <h3>Kaca</h3>
+    <button onclick="toggleDaftar('daftarKaca')">Tampilkan </button>
+    <div id="daftarKaca" style="display: none;">
+        <table>
+            <tr><th>Jenis Barang</th><th>Contoh Barang</th><th>Harga Unit/Kg<th><th>+</th><th>Jumlah</th><th>-</th></tr>
+            <tr><td>Botol markisa bensin</td><td>Botol leher pendek bening</td><td>Rp. 1000</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Botol kecap/bir</td><td>Botol leher panjang tebal</td><td>Rp. 700</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Botol Marjan</td><td>Botol tebal</td><td>Rp. 600</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Botol soda</td><td>Botol tebal</td><td>Rp. 300</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+            <tr><td>Botol bir Guinness</td><td>Botol tebal</td><td>Rp. 300</td><td><button onclick="tambahBarang(this)">+</button></td><td><span>0</span></td><td><button onclick="kurangiBarang(this)">-</button></td> </tr>
+        </table>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <section id="pengiriman">
+        <h3>Pilihan Pengiriman</h3>
+        <label for="beratBarang">Berat Barang (kg):</label>
+        <input type="number" id="beratBarang" value="0" min="0" step="0.1" required>
+        <br>
+        <button onclick="hitungBiayaPengiriman()">Hitung Biaya Pengiriman</button>
+        <p id="biayaPengiriman" style="display: none;">
+            <p>Pilih opsi pengiriman:</p>
+            <label>
+                <input type="radio" name="opsiPengiriman" value="dijemput" checked>
+                Dijemput (Biaya: Rp. <span id="biayaJemput">0</span>)
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="opsiPengiriman" value="diantar">
+                Diantar (Biaya: Rp. <span id="biayaAntar">0</span>)
+            </label>
+        </p>
+    </section>
+
+    <div class="total">
+        <p>Jumlah barang yang dipilih: <span id="jumlahBarangDipilih">0</span></p>
+        <p>Total harga: Rp. <span id="totalHarga">0</span></p>
+    </div>
+    <button class="submit-btn" onclick="submitBarang()">Submit</button>
+</footer>
+
+<script src="js/penjual.js"></script>
+
+</body>
+</html>

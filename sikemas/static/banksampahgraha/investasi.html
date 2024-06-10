@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investasi</title>
+    <link rel="stylesheet" href="../css/investasi.css">
+</head>
+
+<body>
+    <div class="box__inside">
+        <header>
+            <h2 class="title title-medium">SIAP MENDANAI?</h2>
+        </header>
+        <h1>Estimasi dan Keuntungan Investasi</h1>
+        <label for="jumlahInvestasi">Jumlah Investasi:</label>
+        <input type="number" id="jumlahInvestasi" placeholder="Jumlah investasi">
+        <label for="tingkatBunga">Tingkat Bunga (%):</label>
+        <input type="number" id="tingkatBunga" placeholder="Tingkat bunga">
+        <label for="periodeInvestasi">Periode Investasi (tahun):</label>
+        <input type="number" id="periodeInvestasi" placeholder="Periode investasi">
+        <button onclick="hitungEstimasi()">Hitung</button>
+        <p id="estimasi"></p>
+        <p id="keuntungan"></p>
+        <script>
+            function hitungEstimasi() {
+                var jumlahInvestasi = document.getElementById('jumlahInvestasi').value;
+                var tingkatBunga = document.getElementById('tingkatBunga').value / 100;
+                var periodeInvestasi = document.getElementById('periodeInvestasi').value;
+
+                var estimasi = parseFloat(jumlahInvestasi) * Math.pow(1 + tingkatBunga, periodeInvestasi);
+                var keuntungan = estimasi - parseFloat(jumlahInvestasi);
+
+                document.getElementById('estimasi').innerHTML = 'Estimasi Nilai Investasi: ' + estimasi.toFixed(2);
+                document.getElementById('keuntungan').innerHTML = 'Estimasi Keuntungan: ' + keuntungan.toFixed(2);
+            }
+        </script>
+
+        <h2>Formulir Isian Investor</h2>
+        <form id="investorForm">
+            <h3>Informasi Pribadi:</h3>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="email">Alamat Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telepon">Nomor Telepon:</label><br>
+            <input type="tel" id="telepon" name="telepon" required><br><br>
+
+            <label for="alamat">Alamat Rumah:</label><br>
+            <input type="text" id="alamat" name="alamat" required><br><br>
+
+            <label for="kota">Kota:</label><br>
+            <input type="text" id="kota" name="kota" required><br><br>
+
+            <label for="kodepos">Kode Pos:</label><br>
+            <input type="text" id="kodepos" name="kodepos" required><br><br>
+
+            <h3>Informasi Keuangan:</h3>
+            <label for="jumlah">Jumlah Investasi yang Diminati:</label><br>
+            <input type="text" id="jumlah" name="jumlah" required><br><br>
+
+            <label for="sumber">Sumber Dana Investasi:</label><br>
+            <input type="text" id="sumber" name="sumber" required><br><br>
+
+            <label for="pengalaman">Pengalaman Investasi Sebelumnya (jika ada):</label><br>
+            <input type="text" id="pengalaman" name="pengalaman"><br><br>
+
+            <label for="tujuan">Tujuan Investasi:</label><br>
+            <input type="text" id="tujuan" name="tujuan" required><br><br>
+
+            <input type="checkbox" id="persetujuan" name="persetujuan" required>
+            <label for="persetujuan">Persetujuan: Dengan mengisi formulir ini, saya menyatakan bahwa informasi yang saya
+                berikan adalah benar dan saya siap untuk melakukan investasi sesuai dengan ketentuan yang
+                berlaku.</label><br><br>
+
+            <button type="button" onclick="submitForm()">Kirim</button>
+        </form>
+
+        <script>
+            function submitForm() {
+                alert("Terima kasih telah mengisi formulir! Data Anda telah berhasil disimpan.");
+                document.getElementById("investorForm").reset();
+            }
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Styles for search column */
+        .search-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .search-column input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .search-column button {
+            padding: 10px 20px;
+            background-color: #3C5B6F;
+            color: #fff;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .search-column input:focus,
+        .search-column button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Styles for header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for card container */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            background-color: #F0F3FF;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .card-content h5 {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            margin-bottom: 20px;
+        }
+
+        .card-content a {
+            display: inline-block;
+            background-color: #294c63;
+            color: #F0F3FF;
+            text-decoration: none;
+            padding: 8px 16px; /* Memperkecil ukuran padding */
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            position: absolute; /* Mengatur posisi absolut pada tombol */
+            bottom: 10px; /* Mengatur jarak dari bawah kartu */
+            right: 10px; /* Mengatur jarak dari sisi kanan kartu */
+            font-size: 14px; /* Memperkecil ukuran teks */
+        }
+
+        .card-content a:hover {
+            background-color: #555;
+        }
+
+        /* Styles for footer */
+        footer {
+            background-color: #3C5B6F;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-content nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .footer-content nav ul li {
+            margin-right: 20px;
+        }
+
+        .footer-content nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-content nav ul li a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-column animate__animated animate__fadeInLeft">
+        <input type="text" placeholder="Cari..." class="animate__animated animate__pulse animate__infinite">
+        <button class="animate__animated animate__pulse animate__infinite">Cari</button>
+    </div>
+    <header>
+        <h2 class="animate__animated animate__fadeInDown animate__delay-1s">MITRA KAMI</h2>
+    </header>
+    <div class="card-container">
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="image/image5.jpg" alt="Bank Sampah Garaha">
+            <div class="card-content">
+                <h3>Bank Sampah Garaha</h3>
+                <h5>Rate 4.7/5 (110 Ulasan)</h5>
+                <p>Bank Sampah Graha adalah lembaga pengelolaan sampah yang berfokus pada memberikan layanan terbaik kepada pelanggan. Dengan sistem yang efisien dan ramah lingkungan, Bank Sampah Graha menerima, memilah, dan mengelola sampah menjadi barang yang bernilai ekonomis.</p>
+                <a href="banksampahgraha/banksampahgraha.html">SELENGKAPNYA</a>
+            </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="image/image5.jpg" alt="Bank Sampah Patria">
+            <div class="card-content">
+                <h3>Bank Sampah Patria</h3>
+                <h5>Rate 4.9/5 (120 Ulasan)</h5>
+                <p>Bank Sampah Patria adalah lembaga yang berdedikasi untuk mengubah sampah menjadi sumber daya bernilai. Kami menerima dan mengelola sampah dari masyarakat, memastikan bahwa setiap kontribusi dihargai dengan adil dan transparan</p>
+                <a href="banksampahgraha/banksampahgraha.html">SELENGKAPNYA</a>
+            </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="image/image5.jpg" alt="Bank Sampah Merdeka">
+            <div class="card-content">
+                <h3>Bank Sampah Merdeka</h3>
+                <h5>Rate 4.0/5 (113 Ulasan)</h5>
+                <p>Bank Sampah Merdekaa adalah lembaga yang berdedikasi untuk mengubah sampah menjadi sumber daya bernilai. Kami menerima dan mengelola sampah dari masyarakat, memastikan bahwa setiap kontribusi dihargai dengan adil dan transparan</p>
+                <a href="banksampahgraha/banksampahgraha.html">SELENGKAPNYA</a>
+            </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="image/image5.jpg" alt="Bank Sampah Tadika">
+            <div class="card-content">
+                <h3>Bank Sampah Tadika</h3>
+                <h5>Rate 4.7/5 (128 Ulasan)</h5>
+                <p>Bank Sampah Tadika adalah lembaga pengelolaan sampah yang berfokus pada memberikan layanan terbaik kepada pelanggan. Dengan sistem yang efisien dan ramah lingkungan, Bank Sampah Graha menerima, memilah, dan mengelola sampah menjadi barang yang bernilai ekonomis.</p>
+                <a href="banksampahgraha/banksampahgraha.html">SELENGKAPNYA</a>
+            </div>
+        </div>
+        <div class="card animate__animated animate__fadeInUp animate__delay-2s">
+            <img src="image/image5.jpg" alt="Bank Sampah Blangko">
+            <div class="card-content">
+                <h3>Bank Sampah Blangko</h3>
+                <h5>Rate 4.5/5 (110 Ulasan)</h5>
+                <p>Bank Sampah Blangko adalah lembaga penerimaan dan pengolahan sampah yang bertujuan untuk meningkatkan kesadaran lingkungan dan ekonomi masyarakat Magelang. Kami menerima dan memilah sampah dari masyarakat, memberikan insentif berupa poin atau uang untuk setiap pengiriman sampah, dan menjual sampah yang telah dipilah dengan harga yang kompetitif.</p>
+                <a href="banksampahgraha/banksampahgraha.html">SELENGKAPNYA</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content animate__animated animate__fadeInUp animate__delay-3s">
+            <p>&copy; 2024. Semua hak cipta dilindungi undang-undang.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat dan Ketentuan</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Tambahkan beberapa interaksi dengan JavaScript
+        const searchInput = document.querySelector('.search-column input');
+        const searchButton = document.querySelector('.search-column button');
+
+        searchInput.addEventListener('focus', () => {
+            searchInput.classList.add('animate__headShake');
+            setTimeout(() => {
+                searchInput.classList.remove('animate__headShake');
+            }, 1000);
+        });
+
+        searchButton.addEventListener('click', () => {
+            searchButton.classList.add('animate__bounce');
+            setTimeout(() => {
+                searchButton.classList.remove('animate__bounce');
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

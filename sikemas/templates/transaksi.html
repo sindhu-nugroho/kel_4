@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        
+        header {
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        nav ul li {
+            background-color: #3C5B6F;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        nav ul li:hover {
+            transform: scale(1.05);
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #FEFDED;
+            display: block;
+            font-size: 18px;
+        }
+
+        nav ul li.premium {
+        border: 2px solid #ffd700; /* Garis kuning emas untuk fitur premium */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 215, 0, 0.5); /* Bayangan dengan warna kuning emas */
+        }
+        
+        .premium-label {
+            background-color: #ffd700;
+            color: #333;
+            font-size: 0.8em;
+            font-weight: bold;
+            padding: 2px 50px; /* Menambah padding kiri dan kanan */
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+        
+        .description {
+            font-size: 15px;
+            color: #FEFDED;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul li {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transaksi</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="penarikan.html"><i class="fas fa-money-bill-wave icon"></i>Penarikan</a>
+                <span class="description">Lakukan penarikan dana dengan cepat, mudah, dan aman.</span>
+            </li>
+            <li class="premium">
+                <span class="premium-label">PREMIUM</span>
+                <a href="tukarpoint.html"><i class="fas fa-exchange-alt icon"></i>Tukar Koin</a>
+                <span class="description">Tukarkan koin yang Anda kumpulkan dengan berbagai voucher menarik!</span>
+            </li>
+            <li>
+                <a href="histori.html"><i class="fas fa-history icon"></i>Histori Transaksi</a>
+                <span class="description">Lihat riwayat transaksi Anda secara rinci dan lengkap.</span>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

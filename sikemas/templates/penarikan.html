@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Penarikan</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 13px;
+}
+
+.container {
+    max-width: 700px;
+    min-height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFBF7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.box {
+    background-color: #f5f5dc;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 10px;
+    }
+
+    .button {
+        padding: 8px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="logo">
+                <!-- Path ke file logo yang Anda upload -->
+                <img src="image/Logosikemas.png" alt="SIKEMAS Logo">
+            </div>
+            <h2>Penarikan</h2>
+            <div class="box">
+                <label for="metode">Pilih Metode:</label>
+                <select id="metode" name="metode">
+                    <option value="mandiri">Mandiri</option>
+                    <option value="bca">BCA</option>
+                    <option value="bri">BRI</option>
+                    <option value="dana">DANA</option>
+                    <option value="ovo">OVO</option>
+                    <option value="gopay">GoPay</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="rekening">Masukkan Nomor Rekening:</label>
+                <input type="number" id="rekening" name="rekening">
+            </div>
+            <div class="box">
+                <label for="pengguna">Nama Pengguna:</label>
+                <input type="text" id="pengguna" name="pengguna">
+            </div>
+            <div class="box">
+                <label for="jumlah">Jumlah Penarikan:</label>
+                <input type="number" id="jumlah" name="jumlah">
+            </div>
+            <div class="box">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="button" onclick="alert('Kirim clicked!')">
+                Kirim
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

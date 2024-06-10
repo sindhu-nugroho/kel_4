@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Struktur Manajemen Bank Sampah Graha</title>
+    <style>
+        body {
+            background-color: #fff; /* krem */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #F0F3FF; /* Teal gelap */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        .org-chart {
+            display: table;
+            margin: auto;
+            padding: 20px;
+        }
+        .org-chart td {
+            text-align: center;
+            vertical-align: top;
+        }
+        .person {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px auto;
+            display: inline-block;
+        }
+        .person div {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+        .line {
+            border-left: 2px solid #ccc;
+            height: 20px;
+            margin: auto;
+        }
+        .line-horizontal {
+            border-top: 2px solid #ccc;
+            height: 2px;
+        }
+        .connector {
+            width: 20px;
+        }
+        .connector-line {
+            border-left: 2px solid #ccc;
+            height: 50%;
+            margin-left: 50%;
+        }
+        .line-down {
+            border-top: 2px solid #ccc;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Struktur Manajemen Bank Sampah Graha</h1>
+    </div>
+    <table class="org-chart">
+        <tr>
+            <td colspan="8">
+                <div class="person"><div>CEO</div>Diana</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="8" class="line-down"></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="line-horizontal"></td>
+            <td colspan="4" class="line-horizontal"></td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <div class="person"><div>COO</div>Mawar</div>
+            </td>
+            <td colspan="4">
+                <div class="person"><div>CFO</div>Doly</div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="connector">
+                <div class="connector-line"></div>
+            </td>
+            <td colspan="2" class="connector">
+                <div class="connector-line"></div>
+            </td>
+            <td colspan="2" class="connector">
+                <div class="connector-line"></div>
+            </td>
+            <td colspan="2" class="connector">
+                <div class="connector-line"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="person"><div>HR Manager</div>Hisyam</div>
+            </td>
+            <td colspan="2">
+                <div class="person"><div>Marketing Manager</div>Jessica</div>
+            </td>
+            <td colspan="2">
+                <div class="person"><div>IT Supervisor</div>Agus</div>
+            </td>
+            <td colspan="2">
+                <div class="person"><div>Operations Supervisor</div>Putra</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

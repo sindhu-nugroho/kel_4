@@ -1,0 +1,459 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Font styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 100%;
+    background-color: #F0F3FF;
+    color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+header.sticky {
+    background-color: rgb(240, 243, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.75s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.logo img {
+    max-height: 40px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-link {
+    margin-left: auto; /* Pindahkan ikon profil ke ujung kanan */
+    margin-right: 20px; /* Jarak antara ikon profil dengan elemen sebelumnya */
+}
+
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+main {
+    margin-top: 13px; /* Ruang untuk header */
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('../image/bg.jpg!bwr800.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+    background-color:rgba(75, 120, 151, 0.557);
+    border-radius: 8px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    margin-bottom: 0.5rem; /* Atur jarak antara SIKEMAS dan Sistem Keuangan Manajemen Sampah */
+}
+
+/* About section styles */
+.text-center {
+    text-align: center;
+}
+
+.about {
+    padding: 4rem 1rem;
+    background-color: #fff;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about .col-3 {
+    width: 25%;
+    padding: 1rem;
+}
+
+.about .feature {
+    background-color: #F0F3FF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+    
+.about .feature:hover {
+    transform: translateY(-5px);
+}
+
+.about .feature img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about .feature h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    flex-grow: 1;
+}
+
+.about .feature p {
+    font-size: 0.9rem;
+    color: #666;
+    flex-grow: 1;
+}
+
+
+.about .feature a.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3C5B6F;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.about .feature a.btn:hover {
+    background-color: #3c6e71;
+}
+
+
+/* GARIS BATAS */
+.section-divider {
+    margin: 4rem auto; /* Atur margin untuk jarak atas dan bawah */
+    width: 100%; /* Atur lebar garis */
+    border: none; /* Hilangkan border default */
+    border-top: 2px solid #ccc; /* Atur border atas */
+}
+
+
+.premium-tag {
+    background-color: #ffd700;
+    color: #333;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+    display: inline-block; /* Menampilkan sebagai elemen blok inline */
+}
+
+/* Features section styles */
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+
+
+/*Feature bawah*/
+.feature-item {
+    width: 385px; /* Tentukan ukuran feature yang diinginkan */
+    height: 400px; /* Tentukan ukuran feature yang diinginkan */
+    text-align: center;
+    margin: 1rem;
+    background-color: #F0F3FF;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-item img {
+    max-width: 100%;
+    max-height: 150px; /* Atur tinggi maksimum gambar */
+    object-fit: contain; /* Untuk menjaga aspek rasio gambar */
+}
+
+.feature-item h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    flex-grow: 1;
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: #666;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.feature-item .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3C5B6F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.feature-item a.btn:hover {
+    background-color: #2d5068;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #3C5B6F;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-content nav ul li {
+    margin: 0.5rem;
+}
+
+.footer-content nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-content nav ul li a:hover {
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (min-width: 1200px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-right: 2rem;
+    }
+
+    nav {
+        margin-left: auto;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 1rem;
+    }
+
+    nav ul li a {
+        color: #3C5B6F;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+
+    nav ul li a::before {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #3C5B6F;
+        transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover::before {
+        width: 100%;
+    }
+
+    .profile-link {
+        margin-left: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about .col-3 {
+        width: 50%;
+    }
+
+    .about img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about .col-3 {
+        width: 100%;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animations */
+.animate__animated.animate__fadeInUp {
+    animation-delay: 0.5s;
+}
+
+.animate__animated.animate__fadeInLeft,
+.animate__animated.animate__fadeInRight {
+    animation-delay: 1s;
+}
